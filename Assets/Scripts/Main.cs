@@ -20,7 +20,9 @@ public class Main : MonoBehaviour {
 		var bundle = AssetBundle.LoadFromFile (path);
 		if (bundle != null) {
 			var prefab = bundle.LoadAsset<GameObject> ("Sphere");
-			Instantiate (prefab, new Vector3(0, 10, 0), Quaternion.identity);
+			for (int i = 0; i < 100; i++) {
+				Instantiate (prefab, new Vector3 (Random.Range(-3, 3), 5 * i, 0), Quaternion.identity);
+			}
 		} else {
 			Debug.Log ("Assets bundle cannot be loaded!");
 		}

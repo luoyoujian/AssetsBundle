@@ -52,6 +52,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Editor\AssetsBundleBuilder.cs" />
+     <Compile Include="Assets\Scripts\Editor\BuildController.cs" />
  <Reference Include="Facebook.Unity.Settings">
  <HintPath>C:/Users/SERHIIMS/Documents/Projects/Lesson#8/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
  </Reference>
